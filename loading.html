@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mammadov1</title>
+	<style>
+		body {
+			background-color: rgb(20, 20, 20);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			margin: 0;
+			font-family: Arial, sans-serif;
+		}
+		.main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+		.loader {
+            border: 6px solid rgba(0, 141, 9, 0.321);
+			border-top: 6px solid #ff9900c7;
+			border-radius: 50%;
+			width: 40px;
+			height: 40px;
+			animation: spin 2s linear infinite;
+		}
+		
+		@keyframes spin {
+			0% { transform: rotate(0deg); }
+			100% { transform: rotate(360deg); }
+		}
+		
+		.loader-text {
+			color: rgb(0, 141, 9);
+			font-size: 20px;
+			margin-left: 20px;
+			text-align: center;
+		}
+        span{
+            color: #ff9900c7;
+        }
+	</style>
+</head>
+<body>
+    <div class="main">
+	<div class="loader"></div>
+	<div class="loader-text">Loading<span>...</span></div>
+</div>
+
+<script>
+
+setTimeout(function(){
+	window.location.href = "index.html";
+  }, 3000);
+
+</script>
+</body>
+</html>

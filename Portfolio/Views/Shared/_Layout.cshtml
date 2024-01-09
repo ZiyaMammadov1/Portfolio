@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CVup - Resume / CV / vCard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="CVup - Resume / CV / vCard Template" />
+    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Material CV, portfolio" />
+    <meta name="author" content="lmpixels" />
+    <link rel="shortcut icon" href="favicon.ico">
+
+
+    <link rel="stylesheet" href="~/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="~/css/bootstrap-grid.min.css" type="text/css">
+    <link rel="stylesheet" href="~/css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="~/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="~/css/main.css" type="text/css">
+    <link rel="stylesheet" href="~/css/animations.css" type="text/css" />
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="lm-animated-bg"
+    @*style="background-image: url(img/main_bg_1.jpg);">*@
+         style="background-color : black;">
+    </div>
+
+    <!-- /Animated Background -->
+    <!-- Loading animation -->
+    <div class="preloader">
+        <div class="preloader-animation">
+            <div class="dot dot-1"></div>
+            <div class="dot dot-2"></div>
+            <div class="dot dot-3"></div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7" />
+                </filter>
+            </defs>
+        </svg>
+    </div>
+    <!-- /Loading animation -->
+
+    <div class="half-bg"></div>
+
+
+
+
+    <div class="page">
+        <div class="page-content">
+
+            <!-- Left side-->
+            <header id="site_header" class="header mobile-menu-hide">
+                <div class="header-content">
+                  
+                    <div class="header-photo">
+                        <img src="~/img/main_photo.jpg" alt="Alex Smith">
+                    </div>
+
+                    <div class="header-titles">
+                        <h2>Ziya Məmmədov</h2>
+                        <h4>Backend developer</h4>
+                    </div>
+
+                </div>
+
+                <ul class="main-menu">
+                    <li>
+                        <a href="#about-me" class="nav-anim">
+                            <span class="menu-icon lnr lnr-user"></span>
+                            <span class="link-text">Haqqımda</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#resume" class="nav-anim">
+                            <span class="menu-icon lnr lnr-graduation-hat"></span>
+                            <span class="link-text">Bilik və Bacarıqlar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="nav-anim">
+                            <span class="menu-icon lnr lnr-briefcase"></span>
+                            <span class="link-text">Portfolio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#blog" class="nav-anim">
+                            <span class="menu-icon lnr lnr-book"></span>
+                            <span class="link-text">Bloq</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-anim">
+                            <span class="menu-icon lnr lnr-envelope"></span>
+                            <span class="link-text">Əlaqə</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="social-links">
+                    <ul>
+                        <li><a href="https://github.com/ZiyaMammadov1" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/ziyamammadov1/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        @*<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>*@
+                    </ul>
+                </div>
+
+                <div class="info-list">
+                    <ul>
+                        <li>
+                            <span class="value">050 481 27 19</span>
+                        </li>
+
+                        <li>
+                            <span class="value"><a href="mailto:ziya.memmedov@hotmail.com" style="color: white;">ziya.memmedov@hotmail.com</a></span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header-buttons">
+                    <a href="~/Ziya_Mammadov.pdf" target="_blank" class="btn btn-primary">CV-yə bax</a>
+                </div>
+
+                @*<div class="copyrights">© 2022 All rights reserved.</div>*@
+            </header>
+
+            <!-- Mobile Navigation -->
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            @RenderBody()
+
+        </div>
+    </div>
+
+
+
+    <script data-cfasync="false" src="../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/modernizr.custom.js"></script>
+    <script src="~/js/animating.js"></script>
+
+    <script src="~/js/imagesloaded.pkgd.min.js"></script>
+    <script src="../../../../../www.google.com/recaptcha/api.js"></script>
+
+    <script src='~/js/isotope.pkgd.min.js'></script>
+    <script src='~/js/owl.carousel.min.js'></script>
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+
+    <script src="~/js/validator.js"></script>
+    <script src="~/js/main.js"></script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"8404abfb2dd699ba","version":"2023.10.0","r":1,"token":"94b99c0576dc45bf9d669fb5e9256829","b":1}' crossorigin="anonymous"></script>
+</body>
+
+</html>
