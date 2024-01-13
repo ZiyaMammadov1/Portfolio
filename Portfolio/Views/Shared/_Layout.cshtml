@@ -52,12 +52,16 @@
 
 
     <div class="page">
+
+
+
+
         <div class="page-content">
 
             <!-- Left side-->
             <header id="site_header" class="header mobile-menu-hide">
                 <div class="header-content">
-                  
+
                     <div class="header-photo">
                         <img src="~/img/main_photo.jpg" alt="Alex Smith">
                     </div>
@@ -88,17 +92,17 @@
                             <span class="link-text">Portfolio</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="#blog" class="nav-anim">
-                            <span class="menu-icon lnr lnr-book"></span>
-                            <span class="link-text">Bloq</span>
-                        </a>
+                    @*  <li>
+                    <a href="#blog" class="nav-anim">
+                    <span class="menu-icon lnr lnr-book"></span>
+                    <span class="link-text">Bloq</span>
+                    </a>
                     </li>
                     <li>
-                        <a href="#contact" class="nav-anim">
-                            <span class="menu-icon lnr lnr-envelope"></span>
-                            <span class="link-text">Əlaqə</span>
-                        </a>
+                    <a href="#contact" class="nav-anim">
+                    <span class="menu-icon lnr lnr-envelope"></span>
+                    <span class="link-text">Əlaqə</span>*@
+                    </a>
                     </li>
                 </ul>
 
@@ -138,6 +142,8 @@
 
             @RenderBody()
 
+
+
         </div>
     </div>
 
@@ -157,6 +163,38 @@
 
     <script src="~/js/validator.js"></script>
     <script src="~/js/main.js"></script>
+    <script>
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"8404abfb2dd699ba","version":"2023.10.0","r":1,"token":"94b99c0576dc45bf9d669fb5e9256829","b":1}' crossorigin="anonymous"></script>
 </body>
 
