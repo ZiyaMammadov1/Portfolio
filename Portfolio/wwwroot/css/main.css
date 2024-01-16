@@ -2504,8 +2504,8 @@ textarea.form-control, textarea.form-control:focus {
 .single-page-content .post-content {
     position: relative;
     margin-top: -70px;
-    margin-left: 40px;
-    margin-right: 40px;
+/*    margin-left: 40px;
+    margin-right: 40px;*/
     padding-left: 30px;
     padding-right: 30px;
     background-color: #fff;
@@ -2594,6 +2594,87 @@ blockquote {
     blockquote p {
         margin: 5px;
     }
+
+/*Slider from project start*/
+
+
+.slider-container {
+    position: relative;
+    /*width: 90%;
+    margin: 0 auto;*/
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    height: 450px;
+}
+    .mySlides img {
+        height: 100%;
+        object-fit: contain;
+    }
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: left;
+    color: black;
+}
+
+.slider-container .row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    /*background-color: #ddd;*/
+}
+
+    .slider-container .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+/* Six columns side by side */
+.slider-container .column {
+    float: left;
+    width: 16.66%;
+    border-left: 1px solid green;
+}
+
+/* Add a transparency effect for thumnbail images */
+.slider-container .demo {
+    opacity: 0.6;
+    height: 100px;
+    object-fit: cover;
+    background-color: black;
+}
+
+.slider-container .active,
+.demo:hover {
+    opacity: 1;
+    background-color: black;
+}
+
+    /*Slider from project end*/
+
+
 
 .images {
     display: -ms-flexbox; /* IE10 */
