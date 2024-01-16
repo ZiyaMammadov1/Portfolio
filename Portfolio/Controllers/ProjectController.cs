@@ -8,5 +8,10 @@ namespace Portfolio.Controllers
         {
             return View();
         }
+
+        public IActionResult KBC()
+        {
+            return View();
+        }
     }
 }

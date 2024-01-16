@@ -2655,7 +2655,7 @@ blockquote {
 .slider-container .column {
     float: left;
     width: 16.66%;
-    border-left: 1px solid green;
+    border-left: 1px solid white;
 }
 
 /* Add a transparency effect for thumnbail images */
