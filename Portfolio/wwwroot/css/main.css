@@ -2018,6 +2018,7 @@ textarea.form-control, textarea.form-control:focus {
     }
 
 .blog-card {
+    height : 300px;
     display: block;
     position: relative;
     padding: 0;

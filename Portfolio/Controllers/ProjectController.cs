@@ -13,5 +13,10 @@ namespace Portfolio.Controllers
         {
             return View();
         }
+
+        public IActionResult Judge()
+        {
+            return View();
+        }
     }
 }
