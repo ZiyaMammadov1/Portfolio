@@ -15,5 +15,15 @@ namespace Portfolio.Controllers
         {
             return View();
         }
+
+        public IActionResult Resume()
+        {
+            return View();
+        }
+
+        public IActionResult Portfolio()
+        {
+            return View();
+        }
     }
 }
